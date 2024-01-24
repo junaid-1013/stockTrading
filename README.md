@@ -96,3 +96,29 @@ celery -A stockTrading flower
 ```bash
 python manage.py test
 ```
+
+## For Running in Docker
+* **apply the follwong commands in order**
+* Build and run docker:
+```bash
+docker-compose build
+docker-compose up
+```
+
+* For access logs of the container
+```bash
+docker-compose logs web
+```
+
+* For Clean Up
+```bash
+docker-compose down
+```
+
+
+## Assumptions:
+* **Already Installed**
+* Python 
+* pip
+* Django
+* Docker 
