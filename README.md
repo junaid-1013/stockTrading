@@ -22,6 +22,8 @@ Ensure you have the following installed on your system:
 - PostgreSQL
 - Redis
 - Celery
+- Swagger
+- Docker
 
 ### 2. Install Dependencies
 
@@ -75,13 +77,21 @@ python manage.py runserver
     * `GET /transactions/{user_id}/`: Retrieve all transactions of a specific user.
     * `GET /transactions/{user_id}/{start_timestamp}/{end_timestamp}/`: Retrieve transactions between two timestamps.
 
-### 8. Flower Dashboard for monitoring celery
+### 7.i. End Points Schema
+* **To view the schema of all the end pints schema goto the follwoing url after running**
+* `/api_schema`
+
+### 8. Swagger Documentation
+* **For Swagger Documentation goto the following url after running**
+* `docs/`
+
+### 9. Flower Dashboard for monitoring celery
 
 ```bash
 celery -A stockTrading flower
 ```
 
-### 9. Unit Testing
+### 10. Unit Testing
 
 ```bash
 python manage.py test
